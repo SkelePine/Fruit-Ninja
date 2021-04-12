@@ -19,7 +19,7 @@ function preload() {
   fruit3 = loadImage("fruit3.png");
   fruit4 = loadImage("fruit4.png");
   gameOverImage = loadImage("gameover.png")
-  knifeSound = loadSound("knifeSwoosh.mp3")
+  knifeSound = loadSound("soundbits_JustGore2_JustGore_Cut_Slice_021.mp3")
   gameOverSound = loadSound("zapsplat_human_male_voice_says_game_over_002_15727.mp3")
 }
 
@@ -93,7 +93,7 @@ function draw() {
     if (fruitGroup.isTouching(knife)) {
       fruitGroup.destroyEach();
       score = score + 1
-      // knifeSound.play()
+      knifeSound.play()
     } else {
 
       if (monsterGroup.isTouching(knife)) {

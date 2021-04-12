@@ -20,7 +20,7 @@ function preload() {
   fruit4 = loadImage("fruit4.png");
   gameOverImage = loadImage("gameover.png")
   knifeSound = loadSound("knifeSwoosh.mp3")
-  gameOverSound = loadSound("gameover.mp3")
+  gameOverSound = loadSound("zapsplat_human_male_voice_says_game_over_002_15727.mp3")
 }
 
 
@@ -70,7 +70,7 @@ function draw() {
       fruitGroup.destroyEach();
       fruitPass++
       if (fruitPass > 9) {
-        //  gameOverSound.play()
+        gameOverSound.play()
         gameState = END;
 
         fruitGroup.destroyEach();

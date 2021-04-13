@@ -97,7 +97,7 @@ function draw() {
     } else {
 
       if (monsterGroup.isTouching(knife)) {
-        //gameOverSound.play()
+        gameOverSound.play()
         gameState = END;
 
       }
